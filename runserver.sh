@@ -1,0 +1,1 @@
+RUST_BACKTRACE=full QEMU_CANNOLI=./target/release/libcoverage.so result/bin/qemu-x86_64 /gnu/store/ni2dckdc0lcb6b77b6q3qfy2mr60z8c2-guile-wrapper/bin/guile --no-auto-compile /home/mdupont/.config/guix/current/bin/guix -- build mes  --no-grafts   --no-substitutes   --check 

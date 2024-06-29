@@ -1,0 +1,29 @@
+Available package transformation options:
+
+      --with-source=[PACKAGE=]SOURCE
+                         use SOURCE when building the corresponding package
+      --with-input=PACKAGE=REPLACEMENT
+                         replace dependency PACKAGE by REPLACEMENT
+      --with-graft=PACKAGE=REPLACEMENT
+                         graft REPLACEMENT on packages that refer to PACKAGE
+      --with-branch=PACKAGE=BRANCH
+                         build PACKAGE from the latest commit of BRANCH
+      --with-commit=PACKAGE=COMMIT
+                         build PACKAGE from COMMIT
+      --with-git-url=PACKAGE=URL
+                         build PACKAGE from the repository at URL
+      --with-patch=PACKAGE=FILE
+                         add FILE to the list of patches of PACKAGE
+      --tune[=CPU]       tune relevant packages for CPU--e.g., "skylake"
+      --with-configure-flag=PACKAGE=FLAG
+                         append FLAG to the configure flags of PACKAGE
+      --with-latest=PACKAGE
+                         use the latest upstream release of PACKAGE
+      --with-version=PACKAGE=VERSION
+                         use the given upstream VERSION of PACKAGE
+      --with-c-toolchain=PACKAGE=TOOLCHAIN
+                         build PACKAGE and its dependents with TOOLCHAIN
+      --with-debug-info=PACKAGE
+                         build PACKAGE and preserve its debug info
+      --without-tests=PACKAGE
+                         build PACKAGE without running its tests

@@ -1,0 +1,52 @@
+Usage: guix build [OPTION]... PACKAGE-OR-DERIVATION...
+Build the given PACKAGE-OR-DERIVATION and return their output paths.
+
+  -e, --expression=EXPR  build the package or derivation EXPR evaluates to
+  -f, --file=FILE        build the package or derivation that the code within
+                         FILE evaluates to
+  -m, --manifest=FILE    build the packages that the manifest given in FILE
+                         evaluates to
+  -S, --source           build the packages' source derivations
+      --sources[=TYPE]   build source derivations; TYPE may optionally be one
+                         of "package", "all" (default), or "transitive"
+  -d, --derivations      return the derivation paths of the given packages
+      --check            rebuild items to check for non-determinism issues
+      --repair           repair the specified items
+  -r, --root=FILE        make FILE a symlink to the result, and register it
+                         as a garbage collector root
+  -v, --verbosity=LEVEL  use the given verbosity LEVEL
+  -q, --quiet            do not show the build log
+      --log-file         return the log file names for the given derivations
+
+  -L, --load-path=DIR    prepend DIR to the package module search path
+  -K, --keep-failed      keep build tree of failed builds
+  -k, --keep-going       keep going when some of the derivations fail
+  -n, --dry-run          do not build the derivations
+      --fallback         fall back to building when the substituter fails
+      --no-substitutes   build instead of resorting to pre-built substitutes
+      --substitute-urls=URLS
+                         fetch substitute from URLS if they are authorized
+      --no-grafts        do not graft packages
+      --no-offload       do not attempt to offload builds
+      --max-silent-time=SECONDS
+                         mark the build as failed after SECONDS of silence
+      --timeout=SECONDS  mark the build as failed after SECONDS of activity
+      --rounds=N         build N times in a row to detect non-determinism
+  -c, --cores=N          allow the use of up to N CPU cores for the build
+  -M, --max-jobs=N       allow at most N build jobs
+      --debug=LEVEL      produce debugging output at LEVEL
+
+           list available targets
+      --target=TRIPLET   cross-build for TRIPLET--e.g., "aarch64-linux-gnu"
+
+           list available systems
+  -s, --system=SYSTEM    attempt to build for SYSTEM--e.g., "i686-linux"
+
+         list package transformation options not shown here
+
+  -h, --help             display this help and exit
+  -V, --version          display version information and exit
+
+Report bugs to: bug-guix@gnu.org.
+GNU Guix home page: <https://guix.gnu.org>
+General help using Guix and GNU software: <https://guix.gnu.org/en/help/>
